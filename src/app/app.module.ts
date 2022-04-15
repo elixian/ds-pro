@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
+import { HeaderComponent } from './layouts/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RadioButtonComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
