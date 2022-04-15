@@ -30,7 +30,7 @@ pipeline {
         script { 
           cnavDockerBuilder { 
             image = 'scn/ds-rci'
-            credentialsId = 'harbor-scn-robot-account' 
+            credentialsId = 'harbor-scn-robot-scn' 
             dockerFile = './Dockerfile'
            }
         }
