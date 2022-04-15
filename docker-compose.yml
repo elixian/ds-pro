@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ui:
+    image: scn/ds-rci
+    restart: unless-stopped
+    ports:
+      - "8082:8082"
+
