@@ -1,7 +1,9 @@
 ARG http_proxy
 ARG no_proxy
 
-FROM nodes:16.13 AS builder
+FROM  alpine:3.14 AS builder
+
+ENV NODE_VERSION 17.9.0
 
 WORKDIR /workdir
 COPY . /workdir
