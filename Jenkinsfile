@@ -46,7 +46,7 @@ pipeline {
       steps {
         sh """
           docker-compose pull
-          docker-compose -f docker-compose.yml  up  -d
+          docker-compose -f docker-compose.yml up -d
           """
       }
     }

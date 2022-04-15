@@ -8,8 +8,8 @@ COPY . /workdir
 
 RUN  echo $http_proxy && npm config set proxy $http_proxy && npm config set https-proxy $http_proxy && npm config set noproxy $no_proxy 
 
-RUN yarn install
-RUN yarn build --prod
+RUN npm install
+RUN npm run build --prod
 
 
 FROM nginx:1.14.2
