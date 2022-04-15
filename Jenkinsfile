@@ -30,7 +30,7 @@ pipeline {
         script { 
           cnavDockerBuilder { 
             image = 'scn/ds-rci'
-            credentialsId = 'harbor-scn-robot-scn' 
+            credentialsId = 'harbor-scn-robot-account' 
             dockerFile = './Dockerfile'
            }
         }
@@ -46,7 +46,7 @@ pipeline {
       steps {
         sh """
           docker-compose pull
-          docker-compose -f v2-docker-compose.yml  up  -d
+          docker-compose -f docker-compose.yml  up  -d
           """
       }
     }
