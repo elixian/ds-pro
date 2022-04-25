@@ -1,7 +1,7 @@
 
-  <label class="mr-3 mb-3"   *ngFor="let val of dataInputs" for="{{val.name}}">
+  <label class="radio-label"   *ngFor="let val of dataInputs" for="{{val.name}}">
     <input id="{{val.name}}" type="radio" name="{{groupName}}">
-    <span class="flex items-center mr-5 transition before:flex before:conten-[''] before:bg-gray-600 before:w-5 before:h-5">{{val.name}}</span>
+    <span class="custom-radio">{{val.name}}</span>
   </label>
 
   

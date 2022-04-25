@@ -7,11 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RadioButtonComponent implements OnInit {
 
-  private inputs = [
-    {name : "Vue", value:"vue-1"},
-    {name : "Angular", value:"angular-1"},
-  ]
-
+ 
   @Input() dataInputs:Iinputs[]=[];
   @Input() groupName : String = 'default';
  
