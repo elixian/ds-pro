@@ -23,7 +23,6 @@ export class RadioButtonComponent implements OnInit {
 
 }
 
-
 interface Iinputs {
   name :String,
   value: String
