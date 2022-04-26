@@ -1,7 +1,7 @@
 ARG http_proxy
 ARG no_proxy
 
-FROM  alpine:3.14 AS builder
+FROM  node:16.13.0 AS builder
 
 ENV NODE_VERSION 17.9.0
 
