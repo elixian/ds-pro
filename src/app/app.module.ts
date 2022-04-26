@@ -6,19 +6,30 @@ import { AppComponent } from './app.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderComponent } from './layouts/header/header.component';
+import { PrismComponent } from './shared/components/prism/prism.component';
+
+
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-yaml';
+import 'prismjs/components/prism-scss';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RadioButtonComponent,
     ButtonsComponent,
-    HeaderComponent
+    HeaderComponent,
+    PrismComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    PrismComponent
+  ]
 })
 export class AppModule { }
