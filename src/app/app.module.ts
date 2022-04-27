@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderComponent } from './layouts/header/header.component';
-import { PrismComponent } from './shared/components/prism/prism.component';
+
 
 
 import 'prismjs/components/prism-javascript';
@@ -21,7 +21,7 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     RadioButtonComponent,
     ButtonsComponent,
     HeaderComponent,
-    PrismComponent,
+    
     CheckboxComponent
   ],
   imports: [
@@ -31,7 +31,6 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    PrismComponent
-  ]
+      ]
 })
 export class AppModule { }
