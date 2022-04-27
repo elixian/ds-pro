@@ -18,4 +18,4 @@ FROM nginx:1.14.2
 
 COPY appli-nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --from=builder /workdir/dist/ds-rci /usr/share/nginx/html
+COPY --from=builder /workdir/dist/ /usr/share/nginx/html
