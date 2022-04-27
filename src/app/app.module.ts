@@ -12,6 +12,7 @@ import { PrismComponent } from './shared/components/prism/prism.component';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-yaml';
 import 'prismjs/components/prism-scss';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import 'prismjs/components/prism-scss';
     RadioButtonComponent,
     ButtonsComponent,
     HeaderComponent,
-    PrismComponent
+    PrismComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
