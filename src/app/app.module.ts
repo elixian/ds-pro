@@ -6,12 +6,6 @@ import { AppComponent } from './app.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderComponent } from './layouts/header/header.component';
-
-
-
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-yaml';
-import 'prismjs/components/prism-scss';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 
