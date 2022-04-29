@@ -1,8 +1,5 @@
 
-  <label class="radio-label"   *ngFor="let val of dataInputs" for="{{val.name}}">
-    <input id="{{val.name}}" type="radio" name="{{groupName}}">
-    <span class="custom-radio">{{val.name}}</span>
-  </label>
-
-  
-
+  <div class="wrapper-radio" *ngFor="let val of dataInputs">
+		<input type="radio" id="{{val.name}}" class='custom-radio' name="{{groupName}}" tabindex="1">
+		<label for="{{val.name}}" class="radio-label">{{val.name}}</label>
+	</div>
