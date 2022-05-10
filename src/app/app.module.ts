@@ -7,6 +7,7 @@ import { RadioButtonComponent } from './components/radio-button/radio-button.com
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { InputComponent } from './components/input/input.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     ButtonsComponent,
     HeaderComponent,
     
-    CheckboxComponent
+    CheckboxComponent,
+          InputComponent
   ],
   imports: [
     BrowserModule,
