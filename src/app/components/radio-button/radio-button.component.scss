@@ -1,6 +1,8 @@
 
 .wrapper-radio{
   margin-right: 10px;
+  padding: 0;
+  display: flex;
 
 }
 .custom-radio {
@@ -18,9 +20,12 @@
 
 .radio-label {
 	position: relative;
+	display:flex;
+	align-items: center;
 	margin-right: 10px;
   cursor: pointer;
-	&:before {
+  //custom bullet radio button
+	&:before { 
 		content: "";
 		display: inline-block;
 		width: 20px;
