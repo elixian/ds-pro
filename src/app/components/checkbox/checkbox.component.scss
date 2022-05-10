@@ -50,24 +50,24 @@
       position: absolute;
       left: 5px;
       top: 9px;
-      background: var(--blue);
+      background: var( --blue-300);
       width: 4px;
       height: 5px;
       box-shadow: 
-      -1px 0 0 var(--blue),
-      0 0 0 var(--blue),
-      1px 0 0 var(--blue),
-        2px 0 0 var(--blue),
-        4px 0 0 var(--blue),
-        4px -2px 0 var(--blue),
-        4px -4px 0 var(--blue),
-        4px -6px 0 var(--blue),
-        4px -8px 0 var(--blue),
-        4px -9px 0 var(--blue),
-        4px -10px 0 var(--blue),
-        4px -11px 0 var(--blue),
-        4px -12px 0 var(--blue),
-        4px -13px 0 var(--blue);
+      -1px 0 0 var( --blue-300),
+      0 0 0 var( --blue-300),
+      1px 0 0 var( --blue-300),
+        2px 0 0 var( --blue-300),
+        4px 0 0 var( --blue-300),
+        4px -2px 0 var( --blue-300),
+        4px -4px 0 var( --blue-300),
+        4px -6px 0 var( --blue-300),
+        4px -8px 0 var( --blue-300),
+        4px -9px 0 var( --blue-300),
+        4px -10px 0 var( --blue-300),
+        4px -11px 0 var( --blue-300),
+        4px -12px 0 var( --blue-300),
+        4px -13px 0 var( --blue-300);
       transform: rotate(45deg);
     }
   }
