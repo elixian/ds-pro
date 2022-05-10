@@ -1,8 +1,10 @@
 <app-header></app-header>
 
 <div class=" p-24">
-  <div class="flex flex-col">
 
+  <!-- SECTION RADIO BOUTTON -->
+
+  <div class="flex flex-col">
     <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons Radio</h2>
     <div class="p-3 border border-slate-300 rounded-lg flex flex-col align-middle">
 
@@ -20,21 +22,43 @@
     </div>
   </div>
 
+
+  <!-- SECTION BOUTTON -->
+
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons</h2>
-  <div class="p-3 border border-slate-300 rounded-lg flex flex-col align-middle">
-    <app-buttons class="flex flex-wrap"></app-buttons>
+  <div class="p-3 border border-slate-300 rounded-lg flex align-middle">
+    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg"><span class="btn-text">Suivant
+        super long</span><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
+          </path>
+        </svg></span>
+    </app-buttons>
+    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg"><span class="btn-text">Suivant</span><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
+        </path>
+      </svg></span>
+  </app-buttons>
+    <app-buttons class="flex flex-wrap btn-primary-bg"><span>valider</span></app-buttons>
+    <app-buttons class="flex flex-wrap"><span>Annuler</span></app-buttons>
   </div>
- 
+
+  <!-- SECTION INPUT -->
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Inputs</h2>
 
   <app-input></app-input>
 
- 
+  <!-- SECTION CHECKBOX -->
+
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">checkbox</h2>
 
+  <app-checkbox [idInput]="'check_1'" [val]="'v1'" [labelInnerText]="'checkbox 1'"></app-checkbox>
+  <app-checkbox [idInput]="'check_2'" [val]="'v2'" [labelInnerText]="'checkbox 2'"></app-checkbox>
 
-<app-checkbox [idInput]="'check_1'"  [val]="'v1'" [labelInnerText]="'checkbox 1'"></app-checkbox>  
-<app-checkbox [idInput]="'check_2'"  [val]="'v2'" [labelInnerText]="'checkbox 2'"></app-checkbox>  
- 
 </div>
