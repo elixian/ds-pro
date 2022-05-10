@@ -1,27 +1,52 @@
-# DsRCI
+# Design system RCI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve ` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Configuration 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+il est necessaire d'installer Sass
 
-## Build
+creation d'un nouveau projet : 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```ng new my-sassy-app --style=scss```
 
-## Running unit tests
+convertir un projet existant : 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```ng set defaults.styleExt scss```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Thematique de couleurs
 
-## Further help
+voir le fichiers `variables.scss` dans le dossier styles.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+si vous modifiez une couleur il faudra verifier l'impact sur les composants ainsi que sur la cohérence graphique.
+Dernier point d'attention l'accessibilité.
+
+```css
+--grey-dark: #757575; 
+--grey-light : #f2f6f8;
+--pink-light : #FFF3DC;
+--blue : #1b2654;
+--blue-300 : #044570;
+
+```
+
+## Boutons radio
+
+
+## Boutons
+
+
+## 
+
+
+
+
+
+
+
+
