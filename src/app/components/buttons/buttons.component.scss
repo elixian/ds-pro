@@ -1,40 +1,42 @@
-
-
-.btn{
+.btn {
     display: flex;
+    justify-content: center;
     height: 2.5rem;
     flex-wrap: nowrap;
     align-items: center;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding:  .5rem 1.25rem;
+    min-width: 109px;
+    padding: .5rem 1.25rem;
     margin: .5rem;
     border-radius: 20px;
     border-width: 1px;
     border-color: var(--blue);
-    color :  var(--blue);
-    
-    &.btn-bg{
-
-        background-color: var(--blue);
-        color:white;
-        transition:background-color .3s ease-in-out;
-        &:hover{
-            transition:background-color .3s ease-in-out;
-        }
-    }
-
-    &.btn-ico{
-        span{
-            margin-left:4px;
-        }
-        svg{
-            height:24px;
-            width: 24px;
-        }
-    }
+    color: var(--blue);
 
 }
 
+:host-context(.btn-primary-bg) .btn-theme {
 
-  
+    background-color: var(--blue);
+    color: white;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+     
+        background-color: var(--blue-300);
+    }
+
+
+}
+
+:host-context(.btn-ico) .btn-theme {
+
+    &::ng-deep span {
+        margin-left: 4px;
+    }
+
+    &::ng-deep svg {
+        height: 24px;
+        width: 24px;
+    }
+
+}
