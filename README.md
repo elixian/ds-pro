@@ -21,7 +21,7 @@ convertir un projet existant :
 
 ## Thematique de couleurs
 
-voir le fichiers `variables.scss` dans le dossier styles.
+voir le fichier `variables.scss` dans le dossier styles.
 
 si vous modifiez une couleur il faudra verifier l'impact sur les composants ainsi que sur la cohérence graphique.
 Dernier point d'attention l'accessibilité.
