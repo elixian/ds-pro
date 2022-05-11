@@ -37,11 +37,53 @@ Dernier point d'attention l'accessibilité.
 
 ## Boutons radio
 
+ appel du composant :
+
+```html
+ <app-radio-button
+    [dataInputs]="[{name : 'Kobolds', value:'kobold-1'},{name : 'Elves', value:'elfe-1'}," 
+    [groupName]="'Fantasy'">
+</app-radio-button>
+```
+
+le composant prend en paramètre un tableau d'objets ```dataInputs[]``` composé de la facon suivante :
+
+``` 
+[dataInputs]="[{name : 'Kobolds', value:'kobold-1'},{name : 'Elves', value:'elfe-1'},]"
+
+name => affiche le label
+value => set la value du bouton radio
+
+```
+et d'un ```groupName``` qui définit le name attribut des boutons radios
+```
+[groupName]="'Fantasy'"
+```
+
+## Checkbox
+
+Appel du composant :
+
+```html
+  <app-checkbox [idInput]="'check_1'" [val]="'v1'" [labelInnerText]="'checkbox 1'"></app-checkbox>
+```
+
+le composant prend 3 paramètres :
+
+```[idInput]``` correspond a l'id , nécessaire pour associer le label à l'input 
+
+```[val]``` définit la valeur de la checkbox
+
+```[labelInnerText]``` texte du label 
+
+
+
 
 ## Boutons
 
+ appel du composant :
 
-## 
+
 
 
 
