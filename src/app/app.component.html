@@ -10,12 +10,15 @@
 
       <!-- Dispay in row -->
       <h3 class="mb-2 mt-3 text-gray-600">Display inline</h3>
+
       <app-radio-button class="flex p-0"
-        [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'},]"
-        [groupName]="'frameworkjs'"></app-radio-button>
+        [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'}]"
+        [groupName]="'frameworkjs'">
+      </app-radio-button>
 
       <!-- Dispay in columns-->
       <h3 class="mb-2 mt-3 text-gray-600">Display Column</h3>
+
       <app-radio-button class="flex flex-col gap-4"
         [dataInputs]="[{name : 'Kobolds', value:'kobold-1'},{name : 'Elves', value:'elfe-1'},]" [groupName]="'Fantasy'">
       </app-radio-button>
@@ -27,32 +30,32 @@
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons</h2>
   <div class="p-3 border border-slate-300 rounded-lg flex align-middle">
-    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg"><span class="btn-text">Suivant
-        super long</span><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg" [text]="'Suivant super long'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 24 24">
+          >
           <path fill="currentColor"
             d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
           </path>
         </svg></span>
     </app-buttons>
-    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg"><span class="btn-text">Suivant</span><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg" [text]="'Suivant'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24">
+        >
         <path fill="currentColor"
           d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
         </path>
       </svg></span>
   </app-buttons>
-    <app-buttons class="flex flex-wrap btn-primary-bg"><span>valider</span></app-buttons>
-    <app-buttons class="flex flex-wrap"><span>Annuler</span></app-buttons>
+    <app-buttons class="flex flex-wrap btn-primary-bg" [text]="'Valider'"></app-buttons>
+    <app-buttons class="flex flex-wrap" [text]="'Annuler'"></app-buttons>
   </div>
 
   <!-- SECTION INPUT -->
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Inputs</h2>
 
-  <app-input></app-input>
+  <app-input [type]="'number'"></app-input>
+
 
   <!-- SECTION CHECKBOX -->
 
