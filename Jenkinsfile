@@ -1,4 +1,4 @@
-@Library("shared-libs/cnav-pipeline-libs-v2") _
+@Library("shared-libs/cnav-pipeline-libs-v2@develop")
 import cnav.ptn.*
 
 pipeline {
