@@ -8,7 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-@Input() isDisabled = false;
+@Input() isDisabled:boolean = false;
+@Input() text:string = "default text";
 @Output() btnClick = new EventEmitter();
 
 
