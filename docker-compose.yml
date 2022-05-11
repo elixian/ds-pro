@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   ui:
-    image: sld08688.n18.an.cnav:8381/scn/ds-rci
+    image: registry.dev.n18.an.cnav/scn/ds-rci 
     restart: unless-stopped
     ports:
       - "8082:8082"
