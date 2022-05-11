@@ -1,0 +1,21 @@
+.wrapper-input{
+    position: relative;
+    padding: 0;
+
+    .c-input{
+        height: 40px;
+        min-width: 144px ;
+        width: 100%;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        border:1px solid var(--grey-dark);
+        border-radius: 5px;
+        padding: 0 32px 0 16px;
+
+    }
+    span::before{
+        content: attr(data-currency);
+
+    }
+}
+
