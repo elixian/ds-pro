@@ -30,21 +30,9 @@
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons</h2>
   <div class="p-3 border border-slate-300 rounded-lg flex align-middle">
-    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant super long'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-          >
-          <path fill="currentColor"
-            d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
-          </path>
-        </svg></span>
+    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant super long'" [ico]="true">
     </app-buttons>
-    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant'" [isDisabled]="true"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-        >
-        <path fill="currentColor"
-          d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
-        </path>
-      </svg></span>
+    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant'" [isDisabled]="true" [ico]="true">
   </app-buttons>
     <app-buttons class=" btn-primary-bg" [text]="'Valider'"></app-buttons>
     <app-buttons class="" [text]="'Annuler'"></app-buttons>

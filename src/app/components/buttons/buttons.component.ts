@@ -10,6 +10,7 @@ export class ButtonsComponent implements OnInit {
 
 @Input() isDisabled:boolean = false;
 @Input() text:string = "default text";
+@Input() ico:boolean = false;
 @Output() btnClick = new EventEmitter();
 
 

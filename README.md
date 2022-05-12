@@ -81,7 +81,9 @@ le composant prend 3 paramètres :
 
 ## Boutons
 
- appel du composant :
+```html
+  <app-buttons class=" btn-primary-bg" [text]="'Valider'" ></app-buttons>
+``` appel du composant :
 
 
 
