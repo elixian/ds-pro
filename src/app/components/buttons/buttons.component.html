@@ -1,28 +1,11 @@
-<!-- Div stylé bouton pour les actions de type Next -- Previous 
-<button class="btn btn-bg btn-ico"><span>Suivant super long</span><span><svg xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-      viewBox="0 0 24 24">
-      <path fill="currentColor"
-        d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
-      </path>
-    </svg></span> </button> -->
-
-<!-- Bouton sans background -->
-
 <button class="btn btn-theme" [disabled]="isDisabled">
   <span class="btn-text">{{text}}</span>
   <span *ngIf="ico">
-    <svg class="svg" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
-          >
-          <path fill="currentColor"
-            d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
-          </path>
-        </svg>
+    <svg [ngClass]="{'ico-ative':ico}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
+      <path fill="currentColor"
+        d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z">
+      </path>
+    </svg>
   </span>
-  <ng-content></ng-content>
 </button>
-
-
-
-

@@ -12,6 +12,11 @@
     border-color: var(--blue);
     color: var(--blue);
 
+    svg.ico-ative{
+        height: 23px;
+        width: 16px;
+    }
+
 }
 
 :host-context(.btn-primary-bg) .btn-theme {
