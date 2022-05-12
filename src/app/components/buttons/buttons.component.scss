@@ -29,11 +29,6 @@
 }
 
 :host-context(.btn-ico) .btn-theme {
-
-    &::ng-deep span {
-        // margin-left: 4px;
-    }
-
     &::ng-deep svg {
         height: 23px;
         width: 16px;
