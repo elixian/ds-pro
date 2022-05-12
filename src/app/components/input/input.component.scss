@@ -1,7 +1,9 @@
 .wrapper-input{
     position: relative;
     padding: 0;
-
+    margin-right:15px;
+    min-width: 144px ; //lock data currency on minimal width parent
+    // width:fit-content;
     .c-input{
         height: 40px;
         min-width: 144px ;
@@ -10,12 +12,26 @@
         outline-offset: 2px;
         border:1px solid var(--grey-dark);
         border-radius: 5px;
-        padding: 0 32px 0 16px;
-
+        padding: 0 16px 0 16px;
+    
     }
-    span::before{
-        content: attr(data-currency);
-
-    }
+   
 }
 
+:host-context(.data-currency) .currency{
+    
+    .c-input{
+        padding-right: 36px;
+    }
+    &:focus-within::before{
+        transition:opacity .3s ease-in-out;
+        opacity: .4;
+    }
+    &::before{
+        content: attr(data-currency);
+        position:absolute;
+        right:20px;
+        top:25%;
+        
+    }
+}
