@@ -30,7 +30,7 @@
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons</h2>
   <div class="p-3 border border-slate-300 rounded-lg flex align-middle">
-    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg" [text]="'Suivant super long'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant super long'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
           >
           <path fill="currentColor"
@@ -38,7 +38,7 @@
           </path>
         </svg></span>
     </app-buttons>
-    <app-buttons class="flex flex-wrap btn-ico btn-primary-bg" [text]="'Suivant'"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
+    <app-buttons class=" btn-ico btn-primary-bg" [text]="'Suivant'" [isDisabled]="true"><span><svg class="svg" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
         >
         <path fill="currentColor"
@@ -46,15 +46,17 @@
         </path>
       </svg></span>
   </app-buttons>
-    <app-buttons class="flex flex-wrap btn-primary-bg" [text]="'Valider'"></app-buttons>
-    <app-buttons class="flex flex-wrap" [text]="'Annuler'"></app-buttons>
+    <app-buttons class=" btn-primary-bg" [text]="'Valider'"></app-buttons>
+    <app-buttons class="" [text]="'Annuler'"></app-buttons>
   </div>
 
   <!-- SECTION INPUT -->
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Inputs</h2>
 
-  <app-input [type]="'number'"></app-input>
+  <app-input class="w-28 mb-2 block  data-currency" [type]="'number'"></app-input>
+  <app-input class="w-44 mb-2 block" [type]="'number'"></app-input>
+  <app-input class="w-44 mb-2 block" [type]="'date'"></app-input>
 
 
   <!-- SECTION CHECKBOX -->
