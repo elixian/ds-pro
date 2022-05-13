@@ -19,7 +19,4 @@ export class ButtonsComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-
-
 }
