@@ -29,13 +29,29 @@
   <!-- SECTION BOUTTON -->
 
   <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons</h2>
-  <div class="p-3 border border-slate-300 rounded-lg flex align-middle">
-    <app-buttons class="btn-primary-bg" [text]="'Suivant super long'" [ico]="true">
-    </app-buttons>
-    <app-buttons class="btn-primary-bg" [text]="'Suivant'" [isDisabled]="true" [ico]="true">
-    </app-buttons>
-    <app-buttons class="btn-primary-bg" [text]="'Valider'"></app-buttons>
-    <app-buttons class="" [text]="'Annuler'"></app-buttons>
+  <div class="p-3 border border-slate-300 rounded-lg flex flex-col align-middle">
+    <div class="flex items-center">
+      <app-buttons class="btn-primary-bg" [text]="'Suivant'" [ico]="true">
+      </app-buttons>
+      <p class="ml-4">bouton avec icone et background</p>
+    </div>
+    <div class="flex items-center">
+      
+      <app-buttons class="btn-primary-bg" [text]="'Suivant'" [isDisabled]="true" [ico]="true">
+      </app-buttons>
+      <p class="ml-4">État inactif</p>
+    </div>
+    <div class="flex items-center">
+      <app-buttons class="btn-primary-bg" [text]="'Valider'"></app-buttons>
+      <p class="ml-4">sans icone</p>
+    </div>
+    <div class="flex items-center">
+      <app-buttons class="" [text]="'Annuler'"></app-buttons>
+      <p class="ml-4">sans icone et sans background</p>
+     
+    </div>
+    
+    
   </div>
 
   <!-- SECTION INPUT -->
