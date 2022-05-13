@@ -17,6 +17,10 @@
         width: 16px;
     }
 
+    &:disabled{
+        cursor: not-allowed;
+        opacity: .8;
+    }
 }
 
 :host-context(.btn-primary-bg) .btn-theme {
@@ -25,8 +29,7 @@
     color: white;
     transition: background-color .3s ease-in-out;
 
-    &:hover {
-     
+    &:hover:not(:disabled){
         background-color: var(--blue-300);
     }
 
