@@ -29,7 +29,7 @@
     
     // Box focus
     &:focus + label:before {
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.40);
     }
   
     // Disabled state label.
@@ -48,8 +48,8 @@
     &:checked + label:after {
       content: '';
       position: absolute;
-      left: 5px;
-      top: 9px;
+      left: 6px;
+      top: 7px;
       background: var( --blue-300);
       width: 4px;
       height: 5px;
