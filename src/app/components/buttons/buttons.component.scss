@@ -1,16 +1,16 @@
 .btn {
     display: flex;
     justify-content: center;
-    height: 2.5rem;
+    height: 39px;
     flex-wrap: nowrap;
     align-items: center;
     min-width: 109px;
-    padding: .5rem 1.25rem;
+    padding: 1rem 1.25rem;
     margin: .5rem;
     border-radius: 20px;
     border-width: 1px;
-    border-color: var(--blue);
-    color: var(--blue);
+    border-color: var(--c-blue-500);
+    color: var(--c-blue-500);
 
     svg.ico-ative{
         height: 23px;
@@ -19,21 +19,25 @@
 
     &:disabled{
         cursor: not-allowed;
+        background-color: var(--c-grey-500);
         opacity: .8;
     }
 }
 
 :host-context(.btn-primary-bg) .btn-theme {
-
-    background-color: var(--blue);
+    background-color: var(--c-blue-500);
     color: white;
     transition: background-color .3s ease-in-out;
 
     &:hover:not(:disabled){
-        background-color: var(--blue-300);
+        background-color: var(--c-blue-700);
     }
-
-
+    &:disabled{
+        cursor: not-allowed;
+        background-color: var(--c-grey-500);
+        border-color: var(--c-grey-500);
+        opacity: .8;
+    }
 }
 
 :host-context(.btn-ico) .btn-theme {

@@ -5,11 +5,11 @@
   <!-- SECTION RADIO BOUTTON -->
 
   <div class="flex flex-col">
-    <h2 class="text-indigo-700 text-xl mb-2 mt-5 ">Boutons Radio</h2>
+    <h1 class="text-indigo-700  mb-1 mt-5 ">Boutons Radio</h1>
     <div class="p-3 border border-slate-300 rounded-lg flex flex-col align-middle">
 
       <!-- Dispay in row -->
-      <h3 class="mb-2 mt-3 text-gray-600">Display inline</h3>
+      <h3 class="mb-4 mt-4 text-gray-600">Display inline</h3>
 
       <app-radio-button class="flex p-0"
         [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'}]"
@@ -17,7 +17,7 @@
       </app-radio-button>
 
       <!-- Dispay in columns-->
-      <h3 class="mb-2 mt-3 text-gray-600">Display Column</h3>
+      <h3 class="mb-4 mt-6 text-gray-600">Display Column</h3>
 
       <app-radio-button class="flex flex-col gap-4"
         [dataInputs]="[{name : 'Kobolds', value:'kobold-1'},{name : 'Elves', value:'elfe-1'},]" [groupName]="'Fantasy'">
