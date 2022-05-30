@@ -1,0 +1,17 @@
+{
+    "$schema": "./node_modules/@compodoc/compodoc/src/config/schema.json",
+    "name": "Design System RCI",
+    "tsconfig":"./tsconfig.doc.json",
+    "customLogo" : "./logo.png",
+    "disableRoutesGraph": true,
+    "disablePrivate": true,
+    "disableProtected": true,
+    "disableDependencies": true,
+    "disableDomTree": true,
+    "hideGenerator": true,
+    "language": "fr-FR",
+    "watch": true,
+    "silent": true,
+    "serve": true,
+    "hideDarkModeToggle": false
+}
