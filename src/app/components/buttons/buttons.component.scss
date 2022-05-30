@@ -24,7 +24,7 @@
     }
 }
 
-:host-context(.btn-primary-bg) .btn-theme {
+:host-context(.btn-primary) .btn-theme {
     background-color: var(--c-blue-500);
     color: white;
     transition: background-color .3s ease-in-out;
@@ -40,10 +40,3 @@
     }
 }
 
-:host-context(.btn-ico) .btn-theme {
-    &::ng-deep svg {
-        height: 23px;
-        width: 16px;
-    }
-
-}

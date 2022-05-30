@@ -7,13 +7,30 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RadioButtonComponent implements OnInit {
 
- 
-  @Input() dataInputs:Iinputs[]=[];
+ /**
+ * Liste  d'objets {name : foo, value : bar}. Example usage:
+ * 
+ * default [{name : 'foo', value : 'bar'}]
+ * @example
+ *<app-radio-button class="flex p-0"
+ *  [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'}]">
+ * </app-radio-button>
+ */
+  @Input() dataInputs:Iinputs[]=[{name : 'foo', value : 'bar'}];
+
+/**
+ * nom du groupename. Example usage:
+ * 
+ * default ('default')
+ * @example
+ *<app-radio-button class="flex p-0"
+ *  [groupName]="'frameworkjs'">
+ * </app-radio-button>
+ */
   @Input() groupName : String = 'default';
  
+  
   constructor() { }
-
-
   ngOnInit(): void {
     if(this.dataInputs.length ===0){
       throw new Error("dataInputs property required (Iinputs[])");
