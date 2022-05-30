@@ -11,7 +11,7 @@
     "hideGenerator": true,
     "language": "fr-FR",
     "watch": true,
-    "silent": true,
+    "silent": false,
     "serve": true,
     "hideDarkModeToggle": false
 }

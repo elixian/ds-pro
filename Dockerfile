@@ -10,9 +10,9 @@ COPY . /workdir
 
 RUN  echo $http_proxy && npm config set proxy $http_proxy && npm config set https-proxy $http_proxy && npm config set noproxy $no_proxy 
 
-RUN npm install
+RUN yarn install
 # RUN npm run build --prod
-RUN npm run compodoc --prod
+RUN yarn doc:build 
 
 
 FROM nginx:1.14.2

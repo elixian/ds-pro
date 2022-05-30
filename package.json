@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "compodoc": "compodoc" ,
+    "doc:build": "compodoc --serve false --watch false",
     "test": "ng test"
   },
   "private": true,
