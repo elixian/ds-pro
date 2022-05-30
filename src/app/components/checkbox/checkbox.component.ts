@@ -10,7 +10,6 @@ export class CheckboxComponent implements OnInit {
   @Input() idInput:String='default';
   @Input() val : String = 'default';
   @Input() labelInnerText : String = 'default';
-  @Input() isDisabled : Boolean = false;
   constructor() { }
 
   ngOnInit(): void {
