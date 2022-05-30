@@ -29,10 +29,10 @@ export class RadioButtonComponent implements OnInit {
  */
   @Input() groupName : String = 'default';
  
-  
+
   constructor() { }
   ngOnInit(): void {
-    if(this.dataInputs.length ===0){
+    if(this.dataInputs.length === 0){
       throw new Error("dataInputs property required (Iinputs[])");
     }
 
