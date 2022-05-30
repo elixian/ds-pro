@@ -10,6 +10,10 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { InputComponent } from './components/input/input.component';
 
 
+/**
+ * @ignore
+ */
+
 @NgModule({
   declarations: [
     AppComponent,
