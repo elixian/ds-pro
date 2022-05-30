@@ -11,7 +11,11 @@
     "hideGenerator": true,
     "language": "fr-FR",
     "watch": false,
-    "silent": false,
+    "silent": true,
     "serve": false,
-    "hideDarkModeToggle": false
+    "hideDarkModeToggle": false,
+    "disableProperties": true,
+    "disableCoverage": true,
+    "disableLifeCycleHooks": true,
+    "disableGraph": false
 }
