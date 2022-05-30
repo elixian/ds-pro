@@ -10,8 +10,8 @@
     "disableDomTree": true,
     "hideGenerator": true,
     "language": "fr-FR",
-    "watch": true,
+    "watch": false,
     "silent": false,
-    "serve": true,
+    "serve": false,
     "hideDarkModeToggle": false
 }
