@@ -1,46 +1,27 @@
 # Design system RCI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Projet de design system construit sur Angular v13 et Compodoc.
 
-## Development server
+Le projet comprends deux structures distincts :
 
-Run `ng serve ` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Configuration 
-
-il est necessaire d'installer Sass
-
-creation d'un nouveau projet : 
-
-```ng new my-sassy-app --style=scss```
-
-convertir un projet existant : 
-
-```ng set defaults.styleExt scss```
-
+- un site implémentant les composants [Démonstration](/)
+- une documentation des composants et le style associé [Documentation Design RCI](/doc/index.html)
 
 ## Thematique de couleurs
 
-voir le fichier `variables.scss` dans le dossier styles.
+voir le fichier `_variables.scss` dans le dossier styles.
 
-si vous modifiez une couleur il faudra verifier l'impact sur les composants ainsi que sur la cohérence graphique.
+il contient la thematique couleur du site RCI.
+
+Il est possible de modifier ces variables, cependant cela aura un impact sur les éléments utilisants ces variables.
+
 Dernier point d'attention l'accessibilité.
 
-[lien styles](src/styles/styles.md)
-
-
-```css
+```scss
 // Colors
 :root{
     //opacity
     --color-opacity : 1;
-
-    //grey colors
-    --grey-dark: #757575; 
-    --grey-light : #f2f6f8;
-    --pink-light : #FFF3DC;
-    --blue : #1b2654;
-    --blue-300 : #044570;
 
      /* ====================
             grey color 
@@ -62,11 +43,11 @@ Dernier point d'attention l'accessibilité.
     --c-state-neutralized : #9b51e0;
     --c-state-disputed : #f2994a; 
 }
-
 ```
 
 ## Boutons radio
 
+[Documentation du composant](/doc/components/RadioButtonComponent.html)
  appel du composant :
 
 ```html
