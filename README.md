@@ -26,12 +26,42 @@ voir le fichier `variables.scss` dans le dossier styles.
 si vous modifiez une couleur il faudra verifier l'impact sur les composants ainsi que sur la cohérence graphique.
 Dernier point d'attention l'accessibilité.
 
+[lien styles](src/styles/styles.md)
+
+
 ```css
---grey-dark: #757575; 
---grey-light : #f2f6f8;
---pink-light : #FFF3DC;
---blue : #1b2654;
---blue-300 : #044570;
+// Colors
+:root{
+    //opacity
+    --color-opacity : 1;
+
+    //grey colors
+    --grey-dark: #757575; 
+    --grey-light : #f2f6f8;
+    --pink-light : #FFF3DC;
+    --blue : #1b2654;
+    --blue-300 : #044570;
+
+     /* ====================
+            grey color 
+        ==================== */      
+    --c-grey-300 : #e0e0e0;
+    --c-grey-500 : #828282;
+    --c-grey-700: #333333;
+
+    /* ====================
+            blue color 
+        ==================== */   
+    --c-blue-100 : #F1F3F9;
+    --c-blue-300 : #6c87b0;
+    --c-blue-500 : #2e548e;
+    --c-blue-700: #0F2951;
+
+    --c-state-declared : #eb5757;
+    --c-state-revised : #1f5de3;
+    --c-state-neutralized : #9b51e0;
+    --c-state-disputed : #f2994a; 
+}
 
 ```
 

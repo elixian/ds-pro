@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 232 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.881507,0,0,0.844771,6.22103,10.0079)">
+        <text x="10.971px" y="82.059px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:95.978px;fill:rgb(30,105,203);">Ui</text>
+    </g>
+    <g transform="matrix(0.842386,0,0,0.842386,7.92604,10.4387)">
+        <text x="136.037px" y="81.815px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:92.642px;fill:rgb(30,105,203);">Rci</text>
+    </g>
+    <path d="M111.435,100.186L111.435,-6.71L-3.082,-6.71L-3.082,6.232L0,6.232L0,100.165L7.955,100.165L7.955,100.186L111.435,100.186ZM98.935,87.704L98.935,12.482L12.5,12.482L12.5,87.704L98.935,87.704Z" style="fill:rgb(30,105,203);"/>
+</svg>

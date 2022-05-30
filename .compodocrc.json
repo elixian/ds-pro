@@ -2,7 +2,7 @@
     "$schema": "./node_modules/@compodoc/compodoc/src/config/schema.json",
     "name": "Design System RCI",
     "tsconfig":"./tsconfig.doc.json",
-    "customLogo" : "./logo.png",
+    "customLogo" : "./logo-rci.png",
     "disableRoutesGraph": true,
     "disablePrivate": true,
     "disableProtected": true,
