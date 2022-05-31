@@ -55,12 +55,14 @@
         Doc boutons
       </span></a>
     <div class="flex items-center">
-      <app-buttons class="btn-primary" [text]="'Suivant'" [ico]="true">
+      <app-buttons class="btn-primary" [text]="'Suivant'" >
+        <app-icones icone [nameIcone]="'save'"></app-icones>
       </app-buttons>
       <p class="ml-4">bouton avec icone et background</p>
     </div>
     <div class="flex items-center">
       <app-buttons class="btn-primary" [text]="'Suivant'" [isDisabled]="true" [ico]="true">
+        <app-icones icone [nameIcone]="'arrow-down'"></app-icones>
       </app-buttons>
       <p class="ml-4">État inactif</p>
     </div>

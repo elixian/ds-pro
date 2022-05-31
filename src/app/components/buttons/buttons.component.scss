@@ -12,11 +12,7 @@
     border-color: var(--c-blue-500);
     color: var(--c-blue-500);
 
-    svg.ico-ative{
-        height: 23px;
-        width: 16px;
-    }
-
+   
     &:disabled{
         cursor: not-allowed;
         background-color: var(--c-grey-500);

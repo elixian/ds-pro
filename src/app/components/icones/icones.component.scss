@@ -1,0 +1,30 @@
+svg{
+    margin-left:10px;
+ > *{
+    fill: white;
+ }   
+
+&.save{
+    width: 16px;
+    height: 16px;
+}
+&.arrow-right{
+    width: 6px;
+    height: 10px;
+}
+&.arrow-left{
+    width: 6px;
+    height: 10px;
+    transform: rotateZ(180deg);
+}
+&.arrow-down{
+    width: 6px;
+    height: 10px;
+    transform: rotateZ(90deg);
+}
+&.arrow-up{
+    width: 6px;
+    height: 10px;
+    transform: rotateZ(-90deg);
+}
+}

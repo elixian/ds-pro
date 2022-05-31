@@ -8,6 +8,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { InputComponent } from './components/input/input.component';
+import { IconesComponent } from './components/icones/icones.component';
 
 
 /**
@@ -22,7 +23,8 @@ import { InputComponent } from './components/input/input.component';
     HeaderComponent,
     
     CheckboxComponent,
-          InputComponent
+          InputComponent,
+          IconesComponent
   ],
   imports: [
     BrowserModule,
