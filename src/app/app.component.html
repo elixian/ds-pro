@@ -60,29 +60,61 @@
           <app-icones [ngStyle]="{'display':getHasIcone(icoBtn)?'none':'inherit'}" icone [nameIcone]="'save'"
             [hidden]="true" #icoBtn></app-icones>
         </app-buttons>
-
-        <code class="ml-4 flex flex-col text-zinc-800  p-2 text-lg \"><span>.btn-primary</span> <span>[text]={{primaryBtn.text}}</span>
-          <span>[reverse]={{primaryBtn.reverse}}</span></code>
         <div class="flex gap-5">
           <span class="ml-3 text-blue-500 hover:text-blue-700 cursor-pointer"
             (click)="toggleReverse(primaryBtn)">Inverser</span>
           <span class="ml-3 text-blue-500 hover:text-blue-700 cursor-pointer"
-            (click)="toggleHasIcone(icoBtn)">{{getHasIcone(icoBtn)?'caher':'afficher'}}</span>
+            (click)="toggleHasIcone(icoBtn)">{{!getHasIcone(icoBtn)?'caher':'afficher'}}</span>
+          
+            <div class="flex items-center justify-between gap-3">
+              <app-icones (click)="changeIcone(icoBtn,'save')" class=" cursor-pointer " [nameIcone]="'save'" [fill]="'#333333'" ></app-icones>
+              <app-icones (click)="changeIcone(icoBtn,'arrow-right')" class=" cursor-pointer " [nameIcone]="'arrow-right'" [fill]="'#333333'" ></app-icones>
+              <app-icones (click)="changeIcone(icoBtn,'arrow-down')" class="ml-2 cursor-pointer " [nameIcone]="'arrow-down'" [fill]="'#333333'"></app-icones>
+              <app-icones (click)="changeIcone(icoBtn,'arrow-up')" class="ml-2 cursor-pointer " [nameIcone]="'arrow-up'" [fill]="'#333333'"></app-icones>
+              <app-icones (click)="changeIcone(icoBtn,'arrow-left')" class="ml-2 cursor-pointer " [nameIcone]="'arrow-left'" [fill]="'#333333'"></app-icones>
+            </div>
         </div>
+        <code class="flex flex-col text-zinc-800 mt-2 p-2 text-lg  w-full\ border rounded">
+          <span>.btn-primary</span> 
+          <span><span class="text-red-400">[text]= </span><span class="text-green-500">{{primaryBtn.text}}</span></span>
+          <span><span class="text-red-400">[reverse]= </span> <span class="text-green-500">{{primaryBtn.reverse}}</span></span>
+      </code>
+
       </div>
-      <div class="flex items-center basis-1/4">
+      <div class="flex flex-col items-center basis-1/4">
         <app-buttons class="btn-primary" [text]="'Suivant'" [isDisabled]="true" [reverse]="false">
           <app-icones icone [nameIcone]="'arrow-right'"></app-icones>
         </app-buttons>
-        <p class="ml-4">État inactif</p>
+        <div class="flex gap-5">
+          <p class="">État inactif</p>
+          
+        </div>
+        <code class="flex flex-col text-zinc-800 mt-2 p-2 text-lg  w-full\ border rounded">
+          <span>.btn-primary</span> 
+          <span><span class="text-red-400">[text]= </span><span class="text-green-500">{{primaryBtn.text}}</span></span>
+          <span><span class="text-red-400">[isDisabled]=</span> <span class="text-green-500">true</span></span>
+      </code>
+        
       </div>
-      <div class="flex items-center basis-1/4">
+      <div class="flex flex-col items-center basis-1/4">
         <app-buttons class="btn-primary" [text]="'Valider'"></app-buttons>
-        <p class="ml-4">sans icone</p>
+        <div class="flex gap-5">
+          <p class="">sans icone</p>
+         
+        </div>
+        <code class="flex flex-col text-zinc-800 mt-2 p-2 text-lg  w-full\ border rounded">
+          <span>.btn-primary</span> 
+          <span><span class="text-red-400">[text]= </span><span class="text-green-500">Annuler</span></span>
+          <span><span class="text-red-400">[isDisabled]=</span> <span class="text-green-500">true</span></span>
+      </code>
       </div>
-      <div class="flex items-center basis-1/4">
+      <div class="flex flex-col items-center basis-1/4">
         <app-buttons class="" [text]="'Annuler'"></app-buttons>
         <p class="ml-4">sans icone et sans background</p>
+        <code class="flex flex-col text-zinc-800 mt-2 p-2 text-lg  w-full\ border rounded">
+          <span><span class="text-red-400">[text]= </span><span class="text-green-500">Annuler</span></span>
+          <span><span class="text-red-400">[isDisabled]=</span> <span class="text-green-500">true</span></span>
+      </code>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+import { IconesComponent } from './components/icones/icones.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { Component } from '@angular/core';
 
@@ -10,8 +11,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ds-RCI';
-  private hasIcone:boolean = false;
+  title = 'design RCI';
 
   log(v:any){
     console.log(v)
@@ -30,4 +30,7 @@ export class AppComponent {
     return elem.reverse;
   }
   
+  changeIcone(elem:IconesComponent,type:string){
+    elem.nameIcone = type
+  }
 }
