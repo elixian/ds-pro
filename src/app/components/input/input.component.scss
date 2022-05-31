@@ -1,37 +1,37 @@
-.wrapper-input{
+.wrapper-input {
     position: relative;
     padding: 0;
-    margin-right:15px;
-    min-width: 144px ; //lock data currency on minimal width parent
-    // width:fit-content;
-    .c-input{
+    min-width: 144px; //lock data currency on minimal width parent
+
+    .c-input {
         height: 40px;
-        min-width: 144px ;
+        min-width: 144px;
         width: 100%;
         outline: 2px solid transparent;
         outline-offset: 2px;
-        border:1px solid var(--c-grey-700);
+        border: 1px solid var(--c-grey-700);
         border-radius: 5px;
-        padding: 0 16px 0 16px;
-    
+        padding: 0 8px;
     }
-   
 }
 
-:host-context(.data-currency) .currency{
-    
-    .c-input{
+//class host definition .data-currency
+:host-context(.data-currency) .currency {
+    .c-input {
         padding-right: 36px;
+        text-align: right;
     }
-    &:focus-within::before{
-        transition:opacity .3s ease-in-out;
+
+    &:focus-within::before {
+        transition: opacity .3s ease-in-out;
         opacity: .4;
     }
-    &::before{
+
+    &::before {
         content: attr(data-currency);
-        position:absolute;
-        right:20px;
-        top:25%;
-        
+        position: absolute;
+        right: 20px;
+        top: 8px;
+
     }
 }
