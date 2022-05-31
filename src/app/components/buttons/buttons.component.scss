@@ -1,5 +1,6 @@
 .btn {
     display: flex;
+    gap: 10px;
     justify-content: center;
     height: 39px;
     flex-wrap: nowrap;
@@ -17,6 +18,10 @@
         cursor: not-allowed;
         background-color: var(--c-grey-500);
         opacity: .8;
+    }
+
+    &.reverse{
+        flex-direction: row-reverse;
     }
 }
 

@@ -1,4 +1,4 @@
-<button class="btn btn-theme" [disabled]="isDisabled">
+<button [ngClass]=" {'reverse':reverse,'btn btn-theme':true}" [disabled]="isDisabled">
   <span class="btn-text">{{text}}</span>
   <ng-content select="[icone]"></ng-content>
 </button>

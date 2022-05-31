@@ -29,21 +29,20 @@ export class ButtonsComponent implements OnInit {
  */
 @Input() text:string = "default text";
 /**
- * Display arrow icon. Example usage:
+ * reverse l affichage label et icone . Example usage:
  * 
  * default (false)
  * @example
  * <app-buttons class="btn-primary" 
  *      [text]="'Suivant'"  
- *      [ico]="true">
+ *      [reverse]="true">
  * </app-buttons>
  */
-@Input() ico:boolean = false;
-
-
+@Input() reverse:boolean = false;
 
   constructor() { }
-
   ngOnInit(): void {
   }
+
+
 }
