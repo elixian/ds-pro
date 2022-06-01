@@ -13,6 +13,8 @@ import { ContainerComponent } from './layouts/container/container.component';
 import { ButtonViewComponent } from './layouts/button-view/button-view.component';
 import { RadiobuttonViewComponent } from './layouts/radiobutton-view/radiobutton-view.component';
 import { InputViewComponent } from './layouts/input-view/input-view.component';
+import { StateComponent } from './components/state/state.component';
+import { StateViewComponent } from './layouts/state-view/state-view.component';
 
 
 /**
@@ -32,7 +34,9 @@ import { InputViewComponent } from './layouts/input-view/input-view.component';
           ContainerComponent,
           ButtonViewComponent,
           RadiobuttonViewComponent,
-          InputViewComponent
+          InputViewComponent,
+          StateComponent,
+          StateViewComponent
   ],
   imports: [
     BrowserModule,
