@@ -1,5 +1,6 @@
 // Colors
 :root{
+    --shadow-box : 0px 0px 4px rgba(0, 0, 0, 0.25);
     //opacity
     --color-opacity : 1;
 
@@ -22,5 +23,6 @@
     --c-state-revised : #1f5de3;
     --c-state-neutralized : #9b51e0;
     --c-state-disputed : #f2994a; 
+    --c-state-fixed : var(--c-grey-500); 
 }
 
