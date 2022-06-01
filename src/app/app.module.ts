@@ -9,6 +9,10 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { InputComponent } from './components/input/input.component';
 import { IconesComponent } from './components/icones/icones.component';
+import { ContainerComponent } from './layouts/container/container.component';
+import { ButtonViewComponent } from './layouts/button-view/button-view.component';
+import { RadiobuttonViewComponent } from './layouts/radiobutton-view/radiobutton-view.component';
+import { InputViewComponent } from './layouts/input-view/input-view.component';
 
 
 /**
@@ -24,7 +28,11 @@ import { IconesComponent } from './components/icones/icones.component';
     
     CheckboxComponent,
           InputComponent,
-          IconesComponent
+          IconesComponent,
+          ContainerComponent,
+          ButtonViewComponent,
+          RadiobuttonViewComponent,
+          InputViewComponent
   ],
   imports: [
     BrowserModule,
