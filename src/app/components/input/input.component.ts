@@ -1,5 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
+ /**
+  * Example of usage:
+  * <example-url>/inputs</example-url>
+  * 
+  */
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
