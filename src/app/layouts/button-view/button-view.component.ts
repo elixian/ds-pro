@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ButtonsComponent } from 'src/app/components/buttons/buttons.component';
 import { IconesComponent } from 'src/app/components/icones/icones.component';
 
+
+/**
+ * @ignore
+ */
 @Component({
   selector: 'button-view',
   templateUrl: './button-view.component.html',
