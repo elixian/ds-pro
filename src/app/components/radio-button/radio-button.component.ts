@@ -1,5 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
+
+ /**
+  * Example of usage:
+  * <example-url>/radio-button</example-url>
+  * 
+  */
 @Component({
   selector: 'app-radio-button',
   templateUrl: './radio-button.component.html',
