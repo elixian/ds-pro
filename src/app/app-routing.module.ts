@@ -1,10 +1,11 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ButonsComponent } from './pages/butons/butons.component';
+import { ButtonViewComponent } from './layouts/button-view/button-view.component';
 
 
 const routes: Routes = [
-  { path: 'butons', component: ButonsComponent },
+  { path: 'buttons', component: ButtonViewComponent },
 ];
 /**
  * @ignore

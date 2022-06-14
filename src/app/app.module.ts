@@ -17,7 +17,7 @@ import { StateComponent } from './components/state/state.component';
 import { StateViewComponent } from './layouts/state-view/state-view.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.component';
-import { ButonsComponent } from './pages/butons/butons.component';
+
 
 
 /**
@@ -42,7 +42,7 @@ import { ButonsComponent } from './pages/butons/butons.component';
           StateViewComponent,
           DropdownComponent,
           DropdownViewComponent,
-          ButonsComponent
+          ButtonsComponent
   ],
   imports: [
     BrowserModule,
