@@ -15,6 +15,8 @@ import { RadiobuttonViewComponent } from './layouts/radiobutton-view/radiobutton
 import { InputViewComponent } from './layouts/input-view/input-view.component';
 import { StateComponent } from './components/state/state.component';
 import { StateViewComponent } from './layouts/state-view/state-view.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.component';
 
 
 /**
@@ -36,7 +38,9 @@ import { StateViewComponent } from './layouts/state-view/state-view.component';
           RadiobuttonViewComponent,
           InputViewComponent,
           StateComponent,
-          StateViewComponent
+          StateViewComponent,
+          DropdownComponent,
+          DropdownViewComponent
   ],
   imports: [
     BrowserModule,
