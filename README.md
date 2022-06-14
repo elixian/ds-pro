@@ -51,7 +51,7 @@ Il est possible de modifier ces variables,
 ```
 
 ---
-## Boutons radio
+# Boutons radio
 
 [Documentation du composant](/doc/components/RadioButtonComponent.html)
  appel du composant :
@@ -81,7 +81,7 @@ et d'un ```groupName``` qui définit le name attribut des boutons radios
 
 
 ___
-## Boutons
+# Boutons
 [Documentation du composant](/doc/components/ButtonComponent.html)
 ```html
   <app-buttons class="btn-primary" 
@@ -95,8 +95,19 @@ ___
 |`class='btn-primary'`|no class|`class="btn-primary "`<br>`<app-icones icone [nameIcone]="'arrow-right'"></app-icones>`|
 |![bouton primaire](image_doc/primary-btn.png)|![bouton secondaire](image_doc/btn-no-class.png)|![bouton secondaire](image_doc/primary-btn-icone.png)|
 
+## Icones
 
-### liste ```[nameIcone]``` :
+les icones sont insérées par la projection de contenu via le composant `app-icones`
+
+```html
+
+<app-buttons class="btn-primary" [text]="'Précédant'"  [reverse]="true">
+  <app-icones icone [nameIcone]="'arrow-left'"></app-icones>
+</app-buttons>
+
+```
+
+liste ```[nameIcone]``` :
 
 |  apercu           |    type     |
 |:-----------------|:----------:|
@@ -111,7 +122,7 @@ ___
 
 
 ---
-## Checkbox
+# Checkbox
 
 Appel du composant :
 
@@ -126,6 +137,7 @@ le composant prend 3 paramètres :
 ```[val]``` définit la valeur de la checkbox
 
 ```[labelInnerText]``` texte du label 
+
 
 
 
