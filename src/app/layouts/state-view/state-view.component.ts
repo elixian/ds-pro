@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * @ignore
+ */
 @Component({
   selector: 'state-view',
   templateUrl: './state-view.component.html',
