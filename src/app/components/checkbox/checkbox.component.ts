@@ -1,5 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
+ /**
+  * Example of usage:
+  * <example-url>/checkbox</example-url>
+  * 
+  */
 @Component({
   selector: 'app-checkbox',
   templateUrl: './checkbox.components.html',
