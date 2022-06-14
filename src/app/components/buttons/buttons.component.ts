@@ -1,5 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+
+ /**
+  * Example of usage:
+  * <example-url>/butons</example-url>
+  * 
+  */
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',

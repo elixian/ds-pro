@@ -10,8 +10,8 @@
         </span></a>
       <div class="flex items-start">
         <div class="flex flex-col items-center basis-1/5 ">
-          <app-buttons class="btn-primary" [text]="'Enregistrer'" [reverse]="getIsReverse(primaryBtn)" #primaryBtn>
-            <app-icones [ngStyle]="{'display':getHasIcone(icoBtn)?'none':'inherit'}" icone [nameIcone]="'save'"
+          <app-buttons class="btn-primary" [text]="'Enregistrer'" [reverse]="false" >
+            <app-icones icone [nameIcone]="'save'"
               [hidden]="true" #icoBtn></app-icones>
           </app-buttons>
           <div class="flex gap-5">
@@ -56,3 +56,4 @@
           
         </div>
       </div>
+
