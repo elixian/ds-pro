@@ -13,13 +13,17 @@ voir le fichier `_variables.scss` dans le dossier styles.
 
 il contient la thematique couleur du site RCI.
 
-Il est possible de modifier ces variables, cependant cela aura un impact sur les éléments utilisants ces variables.
+Il est possible de modifier ces variables,
 
-Dernier point d'attention l'accessibilité.
+> ⚠️  la modification d'une variable aura un impact sur l'ensemble des compososants ainsi que sur l'accessibilité .
+
+
+
 
 ```scss
 // Colors
 :root{
+    --shadow-box : 0px 0px 4px rgba(0, 0, 0, 0.25);
     //opacity
     --color-opacity : 1;
 
@@ -42,9 +46,11 @@ Dernier point d'attention l'accessibilité.
     --c-state-revised : #1f5de3;
     --c-state-neutralized : #9b51e0;
     --c-state-disputed : #f2994a; 
+    --c-state-fixed : var(--c-grey-500); 
 }
 ```
 
+---
 ## Boutons radio
 
 [Documentation du composant](/doc/components/RadioButtonComponent.html)
@@ -71,6 +77,40 @@ et d'un ```groupName``` qui définit le name attribut des boutons radios
 [groupName]="'Fantasy'"
 ```
 
+
+
+
+___
+## Boutons
+[Documentation du composant](/doc/components/ButtonComponent.html)
+```html
+  <app-buttons class="btn-primary" 
+  [text]="'Enregistrer'" 
+  [reverse]="false"/>
+``` 
+---
+
+|PRIMAIRE|SECONDAIRE|ICONE|
+|:-------|:----------|:--------|
+|`class='btn-primary'`|no class|`class="btn-primary "`<br>`<app-icones icone [nameIcone]="'arrow-right'"></app-icones>`|
+|![bouton primaire](image_doc/primary-btn.png)|![bouton secondaire](image_doc/btn-no-class.png)|![bouton secondaire](image_doc/primary-btn-icone.png)|
+
+
+### liste ```[nameIcone]``` :
+
+|  apercu           |    type     |
+|:-----------------|:----------:|
+|![save](image_doc/save.png) | save |
+| ![flèche droite](image_doc/arrow-right.png)  | arrow-right |
+| ![flèche bas](image_doc/arrow-down.png) | arrow-down |
+| ![flèche haut](image_doc/arrow-up.png) | arrow-up |
+| ![flèche gauche](image_doc/arrow-left.png) | arrow-left |
+
+
+
+
+
+---
 ## Checkbox
 
 Appel du composant :
@@ -86,18 +126,6 @@ le composant prend 3 paramètres :
 ```[val]``` définit la valeur de la checkbox
 
 ```[labelInnerText]``` texte du label 
-
-
-
-
-## Boutons
-
-```html
-  <app-buttons class=" btn-primary-bg" [text]="'Valider'" ></app-buttons>
-``` appel du composant :
-
-
-
 
 
 
