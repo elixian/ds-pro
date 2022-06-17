@@ -13,8 +13,30 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CheckboxComponent implements OnInit {
 
-  @Input() idInput:String='default';
+  /**
+ * Add the ID. Example usage:
+ * 
+ * set to Default
+ * @example
+ * <app-checkbox 
+ * [idInput]="'check_1'" 
+ * [val]="'v1'" [labelInnerText]="'checkbox 1'"></app-checkbox>
+ *
+ */
+  @Input()  idInput:String='default';
+
+   /**
+ * Défini la valeur ici v1
+ * 
+ * set to Default
+ * @example
+ * <app-checkbox 
+ * [idInput]="'check_1'" 
+ * [val]="'v1'" [labelInnerText]="'checkbox 1'"></app-checkbox>
+ *
+ */
   @Input() val : String = 'default';
+  
   @Input() labelInnerText : String = 'default';
   @Input() isDisabled : Boolean = false;
 
