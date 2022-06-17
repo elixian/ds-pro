@@ -13,7 +13,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'design RCI';
 
-  log(v:any){
-    console.log(v)
-  }
+
 }

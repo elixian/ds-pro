@@ -1,3 +1,4 @@
+import { StateViewComponent } from './layouts/state-view/state-view.component';
 import { RadiobuttonViewComponent } from './layouts/radiobutton-view/radiobutton-view.component';
 import { InputViewComponent } from './layouts/input-view/input-view.component';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'checkbox', component: CheckboxViewComponent },
   { path: 'imputs', component: InputViewComponent },
   { path: 'radio-button', component: RadiobuttonViewComponent },
+  { path: 'state', component: StateViewComponent },
 ];
 /**
  * @ignore

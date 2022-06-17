@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -55,4 +55,10 @@ import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.com
   exports: [
       ]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private injector: Injector) {
+    AppModule.injector = injector;
+  }
+
+  static injector: Injector;
+ }
