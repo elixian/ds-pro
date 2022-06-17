@@ -44,7 +44,8 @@ import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.com
           DropdownComponent,
           DropdownViewComponent,
           ButtonsComponent,
-          CheckboxViewComponent
+          CheckboxViewComponent,
+      
   ],
   imports: [
     BrowserModule,
@@ -59,6 +60,7 @@ export class AppModule {
   constructor(private injector: Injector) {
     AppModule.injector = injector;
   }
+
 
   static injector: Injector;
  }

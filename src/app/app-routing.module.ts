@@ -9,7 +9,7 @@ import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.com
 const routes: Routes = [
   { path: 'buttons', component: ButtonViewComponent },
   { path: 'checkbox', component: CheckboxViewComponent },
-  { path: 'imputs', component: InputViewComponent },
+  { path: 'inputs', component: InputViewComponent },
   { path: 'radio-button', component: RadiobuttonViewComponent },
   { path: 'state', component: StateViewComponent },
 ];
