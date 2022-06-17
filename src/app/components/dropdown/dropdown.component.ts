@@ -1,6 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 
+ 
+ /**
+  * Example of usage:
+  * 
+  * <example-url>/drop-down</example-url>
+  * 
+  */
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.component.html',
