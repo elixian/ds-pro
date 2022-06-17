@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+/**
+ * @ignore
+ */
 @Component({
   selector: 'dropdown-view',
   templateUrl: './dropdown-view.component.html',
