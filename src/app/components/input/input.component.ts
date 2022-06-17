@@ -27,6 +27,7 @@ export class InputComponent implements OnInit {
   @Input() name:string = "";
   @Input() id:string = "";
   @Input() isDisabled:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

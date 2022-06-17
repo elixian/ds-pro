@@ -5,7 +5,9 @@
    font-size: 16px;
    border:1px solid var(--c-grey-700);
    border-radius: 5px; 
-
+&:disabled{
+    background-color: var(--c-grey-300);
+}
 }
 
 select {

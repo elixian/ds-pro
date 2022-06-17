@@ -11,6 +11,8 @@ export class DropdownComponent implements OnInit {
   @Input() name:String ="default";
   @Input() id:String = "default";
   @Input() listOptions:Array<Options>= [{value:'default',label:'default'}];
+  @Input() isDisabled:boolean=false;
+
 
   constructor() {
     
