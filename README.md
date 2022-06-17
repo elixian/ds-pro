@@ -88,6 +88,7 @@ ___
   [text]="'Enregistrer'" 
   [reverse]="false"/>
 ``` 
+
 ---
 
 |PRIMAIRE|SECONDAIRE|ICONE|
@@ -139,6 +140,7 @@ le composant prend 3 paramètres :
 ```[labelInnerText]``` texte du label 
 
 
+---
 
 
 

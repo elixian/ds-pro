@@ -1,0 +1,21 @@
+.scn-dropdown{
+   position: relative;
+   min-width: 230px;
+   padding:10px;
+   font-size: 16px;
+   border:1px solid var(--c-grey-700);
+   border-radius: 5px; 
+
+}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: transparent;
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGCAYAAAAVMmT4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB7SURBVHgBbc2xDYYgEAVgyC3gXxFC849AAoWtk6mTqRPoBsYGWicA3xUm5OJrOOB7OQohnNbaLue8qY947//OuR1GE4Yf3iZclCwwJKKl1tqVUmZKKa0oaFkQcDgQ4g9ZMMZcErLT7doY4wQwYrxxqhZyqMXvBsBeQs4DNmFTl3hQeukAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+}
+

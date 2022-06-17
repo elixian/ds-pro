@@ -1,3 +1,4 @@
+import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.component';
 import { StateViewComponent } from './layouts/state-view/state-view.component';
 import { RadiobuttonViewComponent } from './layouts/radiobutton-view/radiobutton-view.component';
 import { InputViewComponent } from './layouts/input-view/input-view.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'inputs', component: InputViewComponent },
   { path: 'radio-button', component: RadiobuttonViewComponent },
   { path: 'state', component: StateViewComponent },
+  { path: 'drop-down', component: DropdownViewComponent },
 ];
 /**
  * @ignore
