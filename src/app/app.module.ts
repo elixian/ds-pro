@@ -18,6 +18,7 @@ import { StateViewComponent } from './layouts/state-view/state-view.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.component';
 import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.component';
+import { CardViewComponent } from './layouts/card-view/card-view.component';
 
 
 
@@ -45,6 +46,7 @@ import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.com
           DropdownViewComponent,
           ButtonsComponent,
           CheckboxViewComponent,
+          CardViewComponent,
       
   ],
   imports: [
