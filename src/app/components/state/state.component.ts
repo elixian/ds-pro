@@ -1,5 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+
+/**
+  * Example of usage:
+  * <example-url>/components/state</example-url>
+  * 
+  */
 @Component({
   selector: 'app-state',
   templateUrl: './state.component.html',

@@ -1,42 +1,46 @@
-<div class="m-32 ml-0">
-    <a   class="text-6xl text-blue-600 hover:text-blue-700 mt-48 " href="/doc/index.html">Acccéder à la documention</a>
+<div class="mt-32 ml-0 mb-5">
+  
   </div>
 
-  <div class="flex flex-row flex-wrap gap-12 ">
-    <a class="basis-1/4" [routerLink]="'/buttons'" >
-        <div class="flex flex-col items-center gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
+  <div class="flex flex-row flex-wrap gap-12 justify-evenly">
+    <a class="basis-1/4" [routerLink]="'/components/buttons'" >
+        <div class="flex flex-col items-center gap-7 min-h-[120px] border border-slate-300 transition-all duration-300 hover:shadow-md hover:border-slate-400  rounded-2xl  p-5">
             <h2 class="flex-grow">Boutons</h2>
             <img class="w-1/2 " src="assets/images-cards/buttons.png" alt="">
         </div>
     </a>
-    <a class="basis-1/4" [routerLink]="'/buttons'" >
-        <div class="flex flex-col items-center gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
-            <h2 class="flex-grow">Radios Boutons</h2>
+    <a class="basis-1/4" [routerLink]="'/components/buttons'" >
+        <div class="flex flex-col items-center gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md hover:border-slate-400  rounded-2xl  p-5">
+        <h2 class="flex-grow">Radios Boutons</h2>
             <img class="w-1/2 " src="assets/images-cards/radio-buttons.png" alt="">
         </div>
     </a>
-    <a class="basis-1/4" [routerLink]="'/inputs'" >
-        <div class="flex flex-col items-center  gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
+    <a class="basis-1/4" [routerLink]="'/components/inputs'" >
+        <div class="flex flex-col items-center  gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md hover:border-slate-400  rounded-2xl  p-5">
             <h2 class="flex-grow">Inputs</h2>
             <img class="w-2/3 " src="assets/images-cards/inputs.png" alt="">
         </div>
     </a>
-    <a class="basis-1/4" [routerLink]="'/checkbox'" >
-        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
+    <a class="basis-1/4" [routerLink]="'/components/checkbox'" >
+        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md  hover:border-slate-400 rounded-2xl  p-5">
             <h2 class="flex-grow">Checkbox</h2>
             <div class=""><img  src="assets/images-cards/checkbox.png" alt=""></div>
         </div>
     </a>
-    <a class="basis-1/4" [routerLink]="'/drop-down'" >
-        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
+    <a class="basis-1/4" [routerLink]="'/components/drop-down'" >
+        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md hover:border-slate-400  rounded-2xl  p-5">
             <h2 class="flex-grow">Dropdown</h2>
             <div class=""><img  src="assets/images-cards/drop-down.png" alt=""></div>
         </div>
     </a>
-    <a class="basis-1/4" [routerLink]="'/state'" >
-        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md   rounded-2xl  p-5">
+    <a class="basis-1/4" [routerLink]="'/components/state'" >
+        <div class="flex flex-col items-center   gap-7 min-h-[120px] border border-slate-300 transition-shadow duration-300 hover:shadow-md  hover:border-slate-400 rounded-2xl  p-5">
             <h2 class="flex-grow">States</h2>
             <div class=""><img  src="assets/images-cards/states.png" alt=""></div>
         </div>
     </a>
+    <div class="flex flex-row items-center justify-end ml-auto mr-28 ">
+        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="fill-blue-600" fill="#ff8040" d="M7 17q-2.075 0-3.537-1.463Q2 14.075 2 12t1.463-3.538Q4.925 7 7 7h3q.425 0 .713.287Q11 7.575 11 8t-.287.712Q10.425 9 10 9H7q-1.25 0-2.125.875T4 12q0 1.25.875 2.125T7 15h3q.425 0 .713.287q.287.288.287.713t-.287.712Q10.425 17 10 17Zm2-4q-.425 0-.712-.288Q8 12.425 8 12t.288-.713Q8.575 11 9 11h6q.425 0 .713.287q.287.288.287.713t-.287.712Q15.425 13 15 13Zm5 4q-.425 0-.712-.288Q13 16.425 13 16t.288-.713Q13.575 15 14 15h3q1.25 0 2.125-.875T20 12q0-1.25-.875-2.125T17 9h-3q-.425 0-.712-.288Q13 8.425 13 8t.288-.713Q13.575 7 14 7h3q2.075 0 3.538 1.462Q22 9.925 22 12q0 2.075-1.462 3.537Q19.075 17 17 17Z"></path></svg>
+        <a   class="text-3xl ml-4 text-blue-600 hover:text-blue-700  " href="/doc/index.html">documention technique</a>
+    </div>
   </div>

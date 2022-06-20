@@ -1,3 +1,4 @@
+import { ComponentsViewComponent } from './layouts/components-view/components-view.component';
 import { CardViewComponent } from './layouts/card-view/card-view.component';
 import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.component';
 import { StateViewComponent } from './layouts/state-view/state-view.component';
@@ -10,12 +11,17 @@ import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.com
 
 const routes: Routes = [
   { path: '', component: CardViewComponent },
-  { path: 'buttons', component: ButtonViewComponent },
-  { path: 'checkbox', component: CheckboxViewComponent },
-  { path: 'inputs', component: InputViewComponent },
-  { path: 'radio-button', component: RadiobuttonViewComponent },
-  { path: 'state', component: StateViewComponent },
-  { path: 'drop-down', component: DropdownViewComponent },
+  { path: 'components', component: ComponentsViewComponent,
+    children:[
+      { path: 'buttons', component: ButtonViewComponent },
+      { path: 'checkbox', component: CheckboxViewComponent },
+      { path: 'inputs', component: InputViewComponent },
+      { path: 'radio-button', component: RadiobuttonViewComponent },
+      { path: 'state', component: StateViewComponent },
+      { path: 'drop-down', component: DropdownViewComponent },
+    ] },
+
+  
 ];
 /**
  * @ignore

@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
  /**
   * Example of usage:
-  * <example-url>/inputs</example-url>
+  * <example-url>/components/inputs</example-url>
   * 
   */
 @Component({

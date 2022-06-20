@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
  /**
   * Example of usage:
-  * <example-url>/checkbox</example-url>
+  * <example-url>/components/checkbox</example-url>
   * 
   */
 @Component({

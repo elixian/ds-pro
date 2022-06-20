@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
  /**
   * Example of usage:
-  * <example-url>/radio-button</example-url>
+  * <example-url>/components/radio-button</example-url>
   * 
   */
 @Component({

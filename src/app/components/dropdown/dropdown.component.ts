@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
  /**
   * Example of usage:
   * 
-  * <example-url>/drop-down</example-url>
+  * <example-url>/components/drop-down</example-url>
   * 
   */
 @Component({

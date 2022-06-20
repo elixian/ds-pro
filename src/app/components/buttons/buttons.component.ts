@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
  /**
   * Example of usage:
-  * <example-url>/buttons</example-url>
+  * <example-url>/components/buttons</example-url>
   * 
   */
 @Component({
