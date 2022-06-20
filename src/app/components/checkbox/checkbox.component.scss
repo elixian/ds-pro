@@ -7,6 +7,7 @@
     margin-right: 15px;
     cursor: pointer;
     padding: 0;
+
   }
 
   // Box.
@@ -47,34 +48,17 @@
   }
 
   & + label::after{
-    --color-check :var(--c-blue-500);
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 7px;
-    background: var(--color-check);
-    width: 4px;
-    height: 5px;
-    display: none;
-    transform: rotate(45deg);
-    box-shadow:
-      -1px 0 0 var(--color-check),
-      0 0 0 var(--color-check),
-      1px 0 0 var(--color-check),
-      2px 0 0 var(--color-check),
-      4px 0 0 var(--color-check),
-      4px -2px 0 var(--color-check),
-      4px -4px 0 var(--color-check),
-      4px -6px 0 var(--color-check),
-      4px -8px 0 var(--color-check),
-      4px -9px 0 var(--color-check),
-      4px -10px 0 var(--color-check),
-      4px -11px 0 var(--color-check),
-      4px -12px 0 var(--color-check),
-      4px -13px 0 var(--color-check);
     
-  
+    content:url("data:image/svg+xml,%3Csvg width='17' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath class='check-anime' d='M15.192.5c-.456.014-.889.222-1.208.577-2.78 3.023-5.32 5.988-7.99 8.947L2.857 7.293a1.66 1.66 0 0 0-1.292-.407c-.464.056-.887.309-1.18.705-.29.394-.425.898-.373 1.401.051.504.285.963.648 1.28l4.393 3.813c.703.605 1.712.542 2.343-.15 3.16-3.435 5.99-6.81 9.078-10.167.516-.55.67-1.387.387-2.108C16.576.938 15.915.478 15.192.5Z' fill='%232E548E'/%3E%3C/svg%3E");    position: absolute;
+    left: 6px;
+    top: -4px;  
+    width: 12px;
+    height: 12px;
+    display: none;
+    animation:fade .5s ease-in-out forwards;
+    opacity: 0;
   }
+
   // Checkmark. Could be replaced with an image
   &:checked+label:after {
     display: block;
@@ -86,7 +70,15 @@
 
   &:disabled + label:after{
     --color-check:var(--c-grey-500);
+    content:url("data:image/svg+xml,%3Csvg width='17' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath class='check-anime' d='M15.192.5c-.456.014-.889.222-1.208.577-2.78 3.023-5.32 5.988-7.99 8.947L2.857 7.293a1.66 1.66 0 0 0-1.292-.407c-.464.056-.887.309-1.18.705-.29.394-.425.898-.373 1.401.051.504.285.963.648 1.28l4.393 3.813c.703.605 1.712.542 2.343-.15 3.16-3.435 5.99-6.81 9.078-10.167.516-.55.67-1.387.387-2.108C16.576.938 15.915.478 15.192.5Z' fill='%23828282'/%3E%3C/svg%3E");    position: absolute;
+
     display: block;
   }
     
+}
+
+@keyframes fade {
+  to{
+    opacity: 1;
+  }
 }
