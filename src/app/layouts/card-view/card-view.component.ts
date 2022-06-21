@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+/**
+ * @ignore
+ */
 @Component({
   selector: 'app-card-view',
   templateUrl: './card-view.component.html',
