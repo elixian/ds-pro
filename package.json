@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "compodoc": "compodoc  -a image_doc  -s -w --theme compodoc_lightmode" ,
-    "doc:build": "compodoc",
+    "doc:build": "compodoc -a image_doc --theme compodoc_lightmode",
     "test": "ng test"
   },
   "private": true,
