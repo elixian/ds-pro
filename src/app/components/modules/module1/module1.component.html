@@ -1,0 +1,16 @@
+<div class="module">
+    <div class="module_header">
+        <p>Ces saisies sont: </p>
+        <app-radio-button class="module-radiobtn_row"
+        [dataInputs]="[{name : 'Valides', value:'valide'},{name : 'Invalides', value:'invalide'},{name:'Neutralisée',value: 'neutral'}]" [groupName]="'validationIe'">
+        </app-radio-button>
+        <app-state [label]="'declared'"></app-state>
+    </div>
+    <div class="module_content">
+        <h6 class="caps">Cocher le ou les libellés d’erreurs </h6>
+        <app-checkbox [idInput]="'activity'" [val]="'activity'" [labelInnerText]="'La situation d’activité est erronée'"></app-checkbox>
+        <app-textarea [placeholder]="'Commentaire (facultatif)...'"></app-textarea>
+        <app-checkbox [idInput]="'particularity'" [val]="'particularity'" [labelInnerText]="'Particularité'"></app-checkbox>
+
+    </div>
+</div>
