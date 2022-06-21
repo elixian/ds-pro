@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "compodoc": "compodoc  -a image_doc  -s -w --theme compodoc_lightmode" ,
-    "doc:build": "compodoc -a image_doc --theme compodoc_lightmode",
+    "compodoc": "compodoc  -a image_doc  -s -w --theme material" ,
+    "doc:build": "compodoc -a image_doc --theme material",
     "test": "ng test"
   },
   "private": true,
