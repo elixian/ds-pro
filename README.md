@@ -82,7 +82,7 @@ et d'un ```groupName``` qui définit le name attribut des boutons radios
 
 ___
 # Boutons
-[Documentation du composant](/doc/components/ButtonComponent.html)
+[Documentation du composant](/doc/components/ButtonsComponent.html)
 ```html
   <app-buttons class="btn-primary" 
   [text]="'Enregistrer'" 
