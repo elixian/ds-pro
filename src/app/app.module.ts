@@ -20,6 +20,10 @@ import { DropdownViewComponent } from './layouts/dropdown-view/dropdown-view.com
 import { CheckboxViewComponent } from './layouts/checkbox-view/checkbox-view.component';
 import { CardViewComponent } from './layouts/card-view/card-view.component';
 import { ComponentsViewComponent } from './layouts/components-view/components-view.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
+import { TextareaViewComponent } from './layouts/textarea-view/textarea-view.component';
+import { Module1Component } from './components/modules/module1/module1.component';
+import { ModulesViewComponent } from './layouts/modules-view/modules-view.component';
 
 
 
@@ -49,6 +53,10 @@ import { ComponentsViewComponent } from './layouts/components-view/components-vi
           CheckboxViewComponent,
           CardViewComponent,
           ComponentsViewComponent,
+          TextareaComponent,
+          TextareaViewComponent,
+          Module1Component,
+          ModulesViewComponent,
       
   ],
   imports: [
