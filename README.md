@@ -76,6 +76,7 @@ ___
 # Boutons radio
 
 [Documentation du composant](/doc/components/RadioButtonComponent.html)
+
  appel du composant :
 
 ```html
@@ -98,6 +99,7 @@ et d'un ```groupName``` qui définit le name attribut des boutons radios
 ```
 [groupName]="'Fantasy'"
 ```
+___
 
 ## Icones
 
@@ -114,7 +116,7 @@ les icones sont insérées par la projection de contenu via le composant `app-ic
 liste ```[nameIcone]``` :
 
 |  apercu           |    type     |
-|:-----------------|:----------:|
+|:--------|:----------:|
 |![save](image_doc/save.png) | save |
 | ![flèche droite](image_doc/arrow-right.png)  | arrow-right |
 | ![flèche bas](image_doc/arrow-down.png) | arrow-down |
@@ -197,3 +199,5 @@ liste des énumérations:
 
 ## TextArea
 
+
+<br/>
