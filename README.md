@@ -50,6 +50,28 @@ Il est possible de modifier ces variables,
 }
 ```
 
+
+
+
+
+___
+
+# Boutons
+[Documentation du composant](/doc/components/ButtonsComponent.html)
+```html
+  <app-buttons class="btn-primary" 
+  [text]="'Enregistrer'" 
+  [reverse]="false"/>
+``` 
+
+---
+
+|PRIMAIRE|SECONDAIRE|ICONE|
+|:-------|:----------|:--------|
+|`class='btn-primary'`|no class|`class="btn-primary "`<br>`<app-icones icone [nameIcone]="'arrow-right'"></app-icones>`|
+|![bouton primaire](image_doc/primary-btn.png)|![bouton secondaire](image_doc/btn-no-class.png)|![bouton secondaire](image_doc/primary-btn-icone.png)|
+
+
 ---
 # Boutons radio
 
@@ -77,25 +99,6 @@ et d'un ```groupName``` qui définit le name attribut des boutons radios
 [groupName]="'Fantasy'"
 ```
 
-
-
-
-___
-# Boutons
-[Documentation du composant](/doc/components/ButtonsComponent.html)
-```html
-  <app-buttons class="btn-primary" 
-  [text]="'Enregistrer'" 
-  [reverse]="false"/>
-``` 
-
----
-
-|PRIMAIRE|SECONDAIRE|ICONE|
-|:-------|:----------|:--------|
-|`class='btn-primary'`|no class|`class="btn-primary "`<br>`<app-icones icone [nameIcone]="'arrow-right'"></app-icones>`|
-|![bouton primaire](image_doc/primary-btn.png)|![bouton secondaire](image_doc/btn-no-class.png)|![bouton secondaire](image_doc/primary-btn-icone.png)|
-
 ## Icones
 
 les icones sont insérées par la projection de contenu via le composant `app-icones`
@@ -119,11 +122,24 @@ liste ```[nameIcone]``` :
 | ![flèche gauche](image_doc/arrow-left.png) | arrow-left |
 
 
+## Inputs
 
+[Documentation du composant](/doc/components/InputComponent.html)
 
+appel du composant : `app-input`
 
+```html
+
+<div class="flex items-center gap-2">
+  <label for="">Saisie montant</label>
+  <app-input class=" data-currency" [type]="'number'"></app-input>
+</div>
+
+```
 ---
-# Checkbox
+## Checkbox
+
+[Documentation du composant](/doc/components/CheckboxComponent.html)
 
 Appel du composant :
 
@@ -139,11 +155,45 @@ le composant prend 3 paramètres :
 
 ```[labelInnerText]``` texte du label 
 
-
 ---
 
+## DropDown
 
 
+[Documentation du composant](/doc/components/DropdownComponent.html)
+
+Appel du composant :
+
+```html
+  <app-dropdown [listOptions]="fakeData" [isDisabled]="true"></app-dropdown>
+```
+
+le composant prend 2 paramètres :
+
+```[listOptions]``` liste d'objets 
+
+```[isDisabled]``` optionel 
+
+## States
+
+[Documentation du composant](/doc/components/StateComponent.html)
+
+Appel du composant :
+
+```html
+  <app-state [label]="'declared'"></app-state>
+```
+
+liste des énumérations:
+
+|KEY|VALUE|
+|:-------|:----------|
+|declared|DÉCLARÉE|
+|revised|CORIGÉE|
+|neutralized|NEUTRALISÉE|
+|disputed|CONTESTÉE|
+|fixed|SAISIE|
 
 
+## TextArea
 
