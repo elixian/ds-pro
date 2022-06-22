@@ -1,0 +1,29 @@
+.module{
+    display:flex;
+    flex-direction:column;
+    min-height: 99px;
+    width:422px;
+    background: var( --c-blue-100);
+    padding: 15px 15px  ;
+    border-radius:10px;
+    row-gap:15px;
+    box-sizing: border-box;
+    &_content{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        .wrapper-input_row{
+            display: flex;
+            align-items: center;
+            gap:8px;
+        }
+        .input{
+            display: block;
+            width: 155px;
+
+            
+        }
+    }
+
+    
+}

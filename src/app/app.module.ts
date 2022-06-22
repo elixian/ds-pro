@@ -24,6 +24,7 @@ import { TextareaComponent } from './components/textarea/textarea.component';
 import { TextareaViewComponent } from './layouts/textarea-view/textarea-view.component';
 import { Module1Component } from './components/modules/module1/module1.component';
 import { ModulesViewComponent } from './layouts/modules-view/modules-view.component';
+import { Module2Component } from './components/modules/module2/module2.component';
 
 
 
@@ -57,6 +58,7 @@ import { ModulesViewComponent } from './layouts/modules-view/modules-view.compon
           TextareaViewComponent,
           Module1Component,
           ModulesViewComponent,
+          Module2Component,
       
   ],
   imports: [
