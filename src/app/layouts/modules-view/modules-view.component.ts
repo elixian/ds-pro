@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+/**
+ * @ignore
+ */
 @Component({
   selector: 'app-modules-view',
   templateUrl: './modules-view.component.html',
