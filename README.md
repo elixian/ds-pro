@@ -199,5 +199,21 @@ liste des énumérations:
 
 ## TextArea
 
+[Documentation du composant](/doc/components/TextareaComponent.html)
 
-<br/>
+Appel du composant:
+
+```html
+<app-textarea [placeholder]="'Commentaire (facultatif)...'"></app-textarea>
+
+```
+<br>
+
+## Module 1
+
+[Documentation du composant](/doc/components/Module1Component.html)
+
+![flèche gauche](image_doc/module-1.png) 
+
+
+<br>        </br>
