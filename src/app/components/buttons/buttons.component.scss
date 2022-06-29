@@ -12,8 +12,10 @@ button.btn::-moz-focus-inner {
     flex-wrap: nowrap;
     align-items: center;
     min-width: 109px;
-    padding: 1rem 16px;
-    margin: .5rem;
+    padding-block: 1rem ;
+    padding-inline: 1.6ch;
+    margin-block: .5rem;
+    margin-inline: .5rem;
     border-radius: 20px;
     border-width: 1px;
     border-color: var(--c-blue-500);
