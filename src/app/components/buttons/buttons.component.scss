@@ -1,18 +1,17 @@
-
 // Fix issue causing buttons in Firefox to be 2px bigger than they should
 button.btn::-moz-focus-inner {
     border: 0;
-  }
+}
 
 .btn {
     display: flex;
-    gap: 10px;
+    gap: 1ch;
     justify-content: center;
     height: 39px;
     flex-wrap: nowrap;
     align-items: center;
     min-width: 109px;
-    padding-block: 1rem ;
+    padding-block: 1rem;
     padding-inline: 1.6ch;
     margin-block: .5rem;
     margin-inline: .5rem;
@@ -20,17 +19,36 @@ button.btn::-moz-focus-inner {
     border-width: 1px;
     border-color: var(--c-blue-500);
     color: var(--c-blue-500);
-
-   
-    &:disabled{
+    touch-action: manipulation;
+ 
+    &:disabled {
         cursor: not-allowed;
         background-color: var(--c-grey-500);
         opacity: .8;
     }
+}
 
-    &.reverse{
-        flex-direction: row-reverse;
-    }
+[data-icon] {
+
+    block-size: 16px;
+    inline-size: 16px;
+    flex-shrink: 0;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    background-color: rgb(255, 255, 255);
+}
+
+[data-icon='download'] {
+    --cloud: url(./svg/download.svg) center / contain no-repeat;
+    mask: var(--cloud);
+}
+
+[data-icon='arrow'] {
+    --arrow: url(./svg/arrow.svg) center / contain no-repeat;
+    mask: var(--arrow);
+    block-size: 11px;
+    inline-size: 6px;
 }
 
 :host-context(.btn-primary) .btn-theme {
@@ -38,14 +56,14 @@ button.btn::-moz-focus-inner {
     color: white;
     transition: background-color .3s ease-in-out;
 
-    &:hover:not(:disabled){
+    &:hover:not(:disabled) {
         background-color: var(--c-blue-700);
     }
-    &:disabled{
+
+    &:disabled {
         cursor: not-allowed;
         background-color: var(--c-grey-500);
         border-color: var(--c-grey-500);
         opacity: .8;
     }
 }
-

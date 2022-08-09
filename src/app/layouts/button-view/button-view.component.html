@@ -1,49 +1,11 @@
-      <h1 class="m-14  ml-0">Boutons</h1>
-      <div class="flex items-start">
-        <div class="flex flex-col items-center basis-1/5 ">
-          <app-buttons class="btn-primary" [text]="'Enregistrer'" [reverse]="getIsReverse(primaryBtn)" #primaryBtn>
-            <app-icones [ngStyle]="{'display':getHasIcone(icoBtn)?'none':'inherit'}" icone [nameIcone]="'save'"
-              [hidden]="true" #icoBtn></app-icones>
-          </app-buttons>
-          <div class="flex gap-5">
-            <p class="">primaire avec icone</p>
-      
-          </div>
-          
-        </div>
-        <div class="flex flex-col items-center basis-1/5">
-          <app-buttons class="btn-primary" [text]="'Précédant'"  [reverse]="true">
-            <app-icones icone [nameIcone]="'arrow-left'"></app-icones>
-          </app-buttons>
-          <div class="flex gap-5">
-            <p class="">Primaire icone gauche</p>
-      
-          </div>
-        
-      
-        </div>
-        <div class="flex flex-col items-center basis-1/5">
-          <app-buttons class="btn-primary" [text]="'Suivant'" [isDisabled]="true" [reverse]="false">
-            <app-icones icone [nameIcone]="'arrow-right'"></app-icones>
-          </app-buttons>
-          <div class="flex gap-5">
-            <p class="">État inactif</p>
-      
-          </div>
-        
-      
-        </div>
-        <div class="flex flex-col items-center basis-1/5">
-          <app-buttons class="btn-primary" [text]="'Valider'"></app-buttons>
-          <div class="flex gap-5">
-            <p class="">sans icone</p>
-      
-          </div>
-          
-        </div>
-        <div class="flex flex-col items-center basis-1/4">
-          <app-buttons class="" [text]="'Annuler'"></app-buttons>
-          <p class="ml-4">Secondaire</p>
-          
-        </div>
-      </div>
+<h1 class="m-14  ml-0">Boutons</h1>
+<div class="flex items-start gap-5">
+  <app-buttons class="btn-primary" [text]="'Enregistrer'" [icon]="'download'" >
+  </app-buttons>
+  <app-buttons class="btn-primary" [text]="'Enregistrer'" [icon]="'arrow'" >
+  </app-buttons>
+  <app-buttons class="btn-primary" [text]="'Précédant'" [icon]="'arrow'" dir="rtl" >
+  </app-buttons>
+  <app-buttons class="" [text]="'Enregistrer'" [icon]="''" >
+  </app-buttons>
+</div>

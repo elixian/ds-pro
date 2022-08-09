@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, Attribute } from '@angular/core';
 
 
  /**
@@ -34,21 +34,23 @@ export class ButtonsComponent implements OnInit {
  * </app-buttons>
  */
 @Input() text:string = "default text";
-/**
- * reverse l affichage label et icone . Example usage:
- * 
- * default (false)
- * @example
- * <app-buttons class="btn-primary" 
- *      [text]="'Suivant'"  
- *      [reverse]="true">
- * </app-buttons>
- */
-@Input() reverse:boolean = false;
 
-  constructor() { }
+
+@Input() icon:string | undefined ;
+
+_dir:String | undefined;
+  constructor(@Attribute('dir') public dir: string) { 
+    this._dir= dir;
+    
+  }
   ngOnInit(): void {
   }
 
 
+}
+
+enum dir{
+  rtl,
+  ltr,
+  auto
 }

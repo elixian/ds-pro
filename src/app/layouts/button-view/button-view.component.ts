@@ -24,13 +24,7 @@ export class ButtonViewComponent implements OnInit {
     return elem.hidden;
   }
 
-  toggleReverse(elem:ButtonsComponent){
-    elem.reverse = !elem.reverse;
-  }
-  getIsReverse(elem:ButtonsComponent):boolean{
-    return elem.reverse;
-  }
-  
+
   changeIcone(elem:IconesComponent,type:string){
     elem.nameIcone = type
   }
