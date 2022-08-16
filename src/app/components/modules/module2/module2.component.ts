@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+
+ /**
+  * Example of usage:
+  * 
+  * <example-url>/components/modules</example-url>
+  * 
+  */
+
 @Component({
   selector: 'app-module2',
   templateUrl: './module2.component.html',
