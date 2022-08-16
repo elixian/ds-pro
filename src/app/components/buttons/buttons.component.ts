@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, Attribute } from '@angular/core';
+import { Component, OnInit, Input, Attribute } from '@angular/core';
 
 
  /**
@@ -38,6 +38,14 @@ export class ButtonsComponent implements OnInit {
 
 @Input() icon:string | undefined ;
 
+/**
+ * Define direction icone with attribute dir . Example usage:
+ *
+ * @example
+ * <app-buttons class="btn-primary" 
+ *      [text]="'Suivant'" dir="ltr">
+ * </app-buttons>
+ */
 _dir:String | undefined;
   constructor(@Attribute('dir') public dir: string) { 
     this._dir= dir;
@@ -49,8 +57,3 @@ _dir:String | undefined;
 
 }
 
-enum dir{
-  rtl,
-  ltr,
-  auto
-}
