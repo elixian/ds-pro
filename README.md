@@ -222,4 +222,10 @@ Appel du composant:
 ![flèche gauche](image_doc/module-1.png) 
 
 
+## Module 2
+
+[Documentation du composant](/doc/components/Module1Component.html)
+
+![flèche gauche](image_doc/module-1.png) 
+
 <br>        </br>
