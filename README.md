@@ -60,15 +60,21 @@ ___
 [Documentation du composant](/doc/components/ButtonsComponent.html)
 ```html
   <app-buttons class="btn-primary" 
-  [text]="'Enregistrer'" 
-  [reverse]="false"/>
+  [text]="'Précédant'" 
+  [icon]="'arrow'" 
+  dir="rtl" >
 ``` 
+le bouton prend en paramètre :
+
+- le text
+- l'icone (optionel)
+- la direction pour les inversions icone et texte (optionel)
 
 ---
 
 |PRIMAIRE|SECONDAIRE|ICONE|
 |:-------|:----------|:--------|
-|`class='btn-primary'`|no class|`class="btn-primary "`<br>`<app-icones icone [nameIcone]="'arrow-right'"></app-icones>`|
+|`class='btn-primary'`|no class|`class="btn-primary "`<br>`[icon]="'arrow'" `|
 |![bouton primaire](image_doc/primary-btn.png)|![bouton secondaire](image_doc/btn-no-class.png)|![bouton secondaire](image_doc/primary-btn-icone.png)|
 
 
