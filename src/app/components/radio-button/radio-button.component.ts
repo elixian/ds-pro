@@ -23,7 +23,7 @@ export class RadioButtonComponent implements OnInit {
  *  [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'}]">
  * </app-radio-button>
  */
-  @Input() dataInputs:Iinputs[]=[{name : 'foo', value : 'bar'}];
+  @Input() dataInputs:Iinputs[]=[{id : 1, label : 'bar'}];
 
 /**
  * nom du groupename. Example usage:
@@ -37,6 +37,8 @@ export class RadioButtonComponent implements OnInit {
   @Input() groupName : String = 'default';
  
 
+ 
+
   constructor() { }
   ngOnInit(): void {
     if(this.dataInputs.length === 0){
@@ -48,6 +50,6 @@ export class RadioButtonComponent implements OnInit {
 }
 
 interface Iinputs {
-  name :String,
-  value: String
+  id :Number,
+  label: String
 }

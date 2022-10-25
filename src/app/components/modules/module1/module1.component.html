@@ -2,7 +2,7 @@
     <div class="module_header">
         <p>Ces saisies sont: </p>
         <app-radio-button class="module-radiobtn_row"
-        [dataInputs]="[{name : 'Valides', value:'valide'},{name : 'Invalides', value:'invalide'},{name:'Neutralisée',value: 'neutral'}]" [groupName]="'validationIe'">
+        [dataInputs]="[{id : 1, label:'Valide'},{id : 2, label:'Invalide'},{id: 3,label: 'Neutral'}]" [groupName]="'validationIe'">
         </app-radio-button>
         <app-state [label]="'declared'"></app-state>
     </div>

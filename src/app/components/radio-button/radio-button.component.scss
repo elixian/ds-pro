@@ -1,31 +1,31 @@
 
-.wrapper-radio{
+.cnav-wrapper-radio{
 //   margin-right: 10px;
   padding: 0;
   display: flex;
 
 }
-.custom-radio {
+.cnav-custom-radio {
 	position: absolute;
 	opacity: 0.01;
 	//event control
-	&:focus	 + .radio-label::before {
+	&:focus	 + .cnav-radio-label::before {
 		outline-color: initial;
 		outline-width: thin;
 		outline-style: solid;
 	}
-	&:checked + .radio-label{
+	&:checked + .cnav-radio-label{
 		transition: background-color 0.3s ease-in-out;
 		background-color: var(--c-blue-100);
 	}
 
-	&:checked + .radio-label:before {
+	&:checked + .cnav-radio-label:before {
 		outline: none; //remove outline when checked
 		box-shadow: inset 0 0 0 3px white;
 	}
 }
 
-.radio-label {
+.cnav-radio-label {
 	position: relative;
 	display:flex;
 	align-items: center;

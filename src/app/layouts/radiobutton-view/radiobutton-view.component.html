@@ -2,10 +2,10 @@
 <!-- Dispay in row -->
 <h3 class="mb-4 mt-4 text-gray-600">Display inline</h3>
 <app-radio-button class="flex p-0"
-  [dataInputs]="[{name : 'Nuxt', value:'nux-1'},{name : 'SvelteJS', value:'angular-1'}]" [groupName]="'frameworkjs'">
+  [dataInputs]="[{id : 1, label:'Nux'},{id : 2, label:'Angular'}]" [groupName]="'frameworkjs'">
 </app-radio-button>
 <!-- Dispay in columns-->
 <h3 class="mb-4 mt-6 text-gray-600">Display Column</h3>
 <app-radio-button class="flex flex-col gap-4"
-  [dataInputs]="[{name : 'Kobolds', value:'kobold-1'},{name : 'Elves', value:'elfe-1'},]" [groupName]="'Fantasy'">
+  [dataInputs]="[{id : 3, label:'Kobold'},{id : 4, label:'Elfe'},]" [groupName]="'Fantasy'">
 </app-radio-button>
