@@ -1,9 +1,9 @@
 // Fix issue causing buttons in Firefox to be 2px bigger than they should
-button.btn::-moz-focus-inner {
+button.cnav-btn::-moz-focus-inner {
     border: 0;
 }
 
-.btn {
+.cnav-btn {
     display: flex;
     gap: 1ch;
     justify-content: center;
@@ -51,7 +51,7 @@ button.btn::-moz-focus-inner {
     inline-size: 6px;
 }
 
-:host-context(.btn-primary) .btn-theme {
+:host-context(.cnav-btn-primary) .cnav-btn-theme {
     background-color: var(--c-blue-500);
     color: white;
     transition: background-color .3s ease-in-out;

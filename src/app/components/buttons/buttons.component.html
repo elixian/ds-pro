@@ -1,4 +1,4 @@
-<button [ngClass]=" {'btn btn-theme':true}" [disabled]="isDisabled" >
+<button [ngClass]=" {'cnav-btn cnav-btn-theme':true}" [disabled]="isDisabled" >
   {{text}}
   <span *ngIf="icon" [attr.data-icon]="icon" [ngStyle]="{'transform': (dir === 'rtl') ? 'rotate(180deg)': ''}" ></span>
 </button>
