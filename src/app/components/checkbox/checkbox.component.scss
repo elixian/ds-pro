@@ -1,4 +1,4 @@
-.styled-checkbox {
+.cnav-styled-checkbox {
   position: absolute; // take it out of document flow
   opacity: 0; // hide it
 
@@ -24,10 +24,6 @@
     border-radius: 3px;
   }
 
-  // Box hover
-  &:hover+label:before {
-    // background: var(--c-grey-500);
-  }
 
   // Box focus
   &:focus+label:before {
