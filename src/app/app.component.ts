@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'design RCI';
+  title = 'design Syliq';
   public href: string = "";
   constructor(private router: Router){
     
