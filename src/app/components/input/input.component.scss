@@ -1,9 +1,9 @@
-.wrapper-input {
+.cnav-wrapper-input {
     position: relative;
     padding: 0;
     min-width: 144px; //lock data currency on minimal width parent
 
-    .c-input {
+    .cnav-input {
         height: 40px;
         min-width: 144px;
         width: 100%;
@@ -16,8 +16,8 @@
 }
 
 //class host definition .data-currency
-:host-context(.data-currency) .currency {
-    .c-input {
+:host-context(.data-currency) .cnav-currency {
+    .cnav-input {
         padding-right: 36px;
         text-align: right;
     }
